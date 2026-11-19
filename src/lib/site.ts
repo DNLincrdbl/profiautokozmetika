@@ -116,20 +116,12 @@ export const quoteServices = [
   "Egyéb",
 ] as const;
 
-export type GalleryCategory = "osszes" | "polirozas" | "belso" | "foliazas" | "keramia";
-
-export const galleryFilters: { id: GalleryCategory; label: string }[] = [
-  { id: "osszes", label: "Összes munka" },
-  { id: "polirozas", label: "Polírozás" },
-  { id: "belso", label: "Belső tisztítás" },
-  { id: "foliazas", label: "Fóliázás" },
-  { id: "keramia", label: "Kerámiabevonat" },
-];
+export type GalleryCategory = "polirozas" | "belso" | "foliazas" | "keramia";
 
 export type Work = {
   id: string;
   title: string;
-  category: Exclude<GalleryCategory, "osszes">;
+  category: GalleryCategory;
   image: Photo;
   width: number;
   height: number;
