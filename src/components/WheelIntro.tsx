@@ -131,7 +131,7 @@ export function WheelIntro() {
       const failSafe = window.setTimeout(() => setAlive(false), 20000);
       const loader = new GLTFLoader();
       loader.load(
-        "/sports_car_wheel.glb",
+        "/models/sports_car_wheel.glb",
         (gltf) => {
           window.clearTimeout(failSafe);
           if (cancelled) return;

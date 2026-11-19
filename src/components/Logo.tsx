@@ -5,7 +5,7 @@ export function Logo() {
   return (
     <Link href="/" className="flex shrink-0 items-center" aria-label="Profi Autókozmetika">
       <Image
-        src="/logo-nav.png"
+        src="/images/logo.png"
         alt=""
         width={1204}
         height={1302}
