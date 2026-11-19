@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
-export function Logo() {
+export function Logo({ className = "h-10 w-auto sm:h-11" }: { className?: string }) {
   return (
     <Link href="/" className="flex shrink-0 items-center" aria-label="Profi Autókozmetika">
       <Image
@@ -10,7 +10,7 @@ export function Logo() {
         width={1204}
         height={1302}
         priority
-        className="h-11 w-auto sm:h-12"
+        className={className}
       />
     </Link>
   );

@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { Logo } from "./Logo";
 import { contact, services } from "@/lib/site";
 
 export function Footer() {
@@ -6,8 +7,8 @@ export function Footer() {
     <footer className="border-t border-white/10">
       <div className="mx-auto grid max-w-7xl gap-12 px-5 py-16 sm:px-8 lg:grid-cols-12">
         <div className="lg:col-span-4">
-          <p className="font-display text-2xl font-extrabold tracking-[-0.04em]">PROFI AUTÓKOZMETIKA</p>
-          <p className="mt-4 max-w-xs text-sm leading-7 text-muted">
+          <Logo className="h-16 w-auto sm:h-[4.75rem]" />
+          <p className="mt-5 max-w-xs text-sm leading-7 text-muted">
             Professzionális autóápolás és felületvédelem Budapesten.
           </p>
         </div>
